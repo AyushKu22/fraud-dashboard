@@ -23,7 +23,12 @@ function Layout({ children }) {
     <div className="min-h-screen bg-gray-100">
       <nav className="bg-slate-900 text-white">
         <div className="flex items-center gap-4 px-4 sm:px-6 py-3">
-          <b>FraudGuard</b>
+          <Link to="/" className="flex items-center gap-2 font-bold">
+  <span className="flex bg-[#ffffff] rounded-md p-0.5">
+    <img src="image/logo.png" alt="" className="h-7 w-7" />
+  </span>
+  <span>FraudGuard</span>
+</Link>
 
           <div className="hidden md:flex gap-6 ml-4">
             {LINKS.map(([to, label]) => <Link key={to} to={to}>{label}</Link>)}
